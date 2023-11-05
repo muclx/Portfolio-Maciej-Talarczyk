@@ -1,0 +1,893 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.animation {
+  animation: jump 1s alternate;
+}
+
+.visible {
+  animation: appear 2s;
+}
+
+.tag {
+  position: relative;
+  left: 0;
+  top: 0;
+  font-size: 1.6rem;
+  color: #2c1993;
+}
+
+.scroll {
+  padding-top: 2rem;
+}
+
+.box {
+  position: relative;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  background-color: #06071E;
+}
+
+.show {
+  display: block;
+}
+
+.transform {
+  transform: translateY(33rem);
+}
+
+.hide {
+  display: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.html {
+  color: #BB391C;
+}
+
+.css {
+  color: #1B69B1;
+}
+
+.js {
+  color: #C2B113;
+}
+
+.scss {
+  color: #AD165F;
+}
+
+.react {
+  color: #1689AD;
+}
+
+.tailwind {
+  color: #105AB1;
+}
+
+.threejs {
+  color: #889093;
+}
+
+.git {
+  color: #C3360A;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 0.72rem;
+  padding-left: 0.72rem;
+  transition: padding 0.5s ease;
+  z-index: 1234141;
+}
+
+nav .blur {
+  -webkit-backdrop-filter: blur(0.8rem) saturate(140%);
+  backdrop-filter: blur(0.8rem) saturate(140%);
+}
+
+nav .burger-nav {
+  padding: 1.4rem 2rem;
+  font-size: 1.8rem;
+  background-color: transparent;
+  width: 6.225rem;
+  border: none;
+  border-radius: 1.2rem;
+  z-index: 2;
+  cursor: pointer;
+  transition: width 0.5s ease;
+}
+
+nav .burger-nav .fa-solid {
+  color: #ffffff;
+}
+
+nav .nav-items {
+  position: relative;
+  top: -33rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  z-index: 10;
+  transition: transform 0.5s ease;
+}
+
+nav .nav-items a {
+  text-align: center;
+  width: 100%;
+  padding: 0.61rem 0;
+  font-size: 1.9rem;
+  color: #bababa;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav .nav-items .active {
+  color: #ffffff;
+}
+
+main {
+  background-color: #040615;
+}
+
+main .start {
+  background: url("../img/background-phone.jpg");
+  background-size: cover;
+  background-position: 40%;
+}
+
+main .start .photo-me-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  padding-top: 7rem;
+}
+
+main .start .photo-me-box header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+main .start .photo-me-box header .tag {
+  left: -15rem;
+}
+
+main .start .photo-me-box header h1 {
+  background-image: linear-gradient(90deg, #5324D6 0%, #040615 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 3.71rem;
+}
+
+main .start .photo-me-box header h1 span {
+  color: #ffffff;
+}
+
+main .start .photo-me-box header p {
+  margin-top: 0rem;
+  font-size: 1.4rem;
+  color: #bababa;
+}
+
+main .start .photo-me-box .photo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+main .start .photo-me-box .photo-container .circle-background {
+  display: flex;
+  justify-content: center;
+  width: 37rem;
+  height: 48rem;
+}
+
+main .start .photo-me-box .photo-container .circle-background .me-image {
+  position: relative;
+  height: 100%;
+  width: 38rem;
+  max-width: 40rem;
+  background: url("../img/profilpic.png");
+  background-size: cover;
+  transform: rotate(180deg);
+  z-index: 0;
+}
+
+main .start .photo-me-box .photo-container .my-description {
+  text-align: justify;
+  -webkit-backdrop-filter: blur(0.8rem) saturate(90%);
+  backdrop-filter: blur(0.8rem) saturate(90%);
+  border-radius: 1.5rem;
+  box-shadow: 0 0 3.5rem #000000;
+}
+
+main .start .photo-me-box .photo-container .my-description h2 {
+  text-align: center;
+  padding: 0.52rem 1rem;
+}
+
+main .start .photo-me-box .photo-container .my-description p {
+  padding: 1rem 1.4rem;
+  padding-top: 0;
+  font-size: 1.2rem;
+  color: #bababa;
+}
+
+main .horizontal-line {
+  position: relative;
+  left: 50%;
+  width: 70%;
+  height: 0.2rem;
+  margin: 2rem 0 1.7rem 0;
+  transform: translateX(-50%);
+  background-color: #999899;
+}
+
+main .fronted-box-names {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.3rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+main .about-container {
+  display: flex;
+  flex-direction: column;
+}
+
+main .about-container .box {
+  margin-bottom: 3rem;
+}
+
+main .about-container .left-side {
+  padding: 1rem;
+}
+
+main .about-container .left-side .about-me-text h2 {
+  padding-left: 2rem;
+}
+
+main .about-container .left-side .about-me-text p {
+  text-indent: 3rem;
+  font-size: 1.5rem;
+  color: #bababa;
+  text-align: justify;
+}
+
+main .about-container .right-side {
+  padding: 1rem;
+}
+
+main .about-container .right-side .tag {
+  top: -1rem;
+  left: 0;
+}
+
+main .about-container .right-side h2 {
+  padding: 0rem 0 2rem 0;
+  text-align: center;
+}
+
+main .about-container .right-side .path-container {
+  display: flex;
+}
+
+main .about-container .right-side .path-container .box {
+  position: relative;
+  padding: 2rem;
+  padding-top: 4.5rem;
+}
+
+main .about-container .right-side .path-container .box .date-message {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: #999899;
+}
+
+main .about-container .right-side .path-container .box p {
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+main .about-container .right-side .path-container .main-line {
+  position: relative;
+  height: 115rem;
+  width: 0.3rem;
+  margin: 2rem;
+  box-shadow: #000000;
+  background-image: linear-gradient(0, transparent 0%, #40189e 50%, transparent 100%);
+}
+
+main .about-container .right-side .path-container .main-line .dot:first-child {
+  margin-top: 0;
+}
+
+main .about-container .right-side .path-container .main-line .dot {
+  position: relative;
+  top: 1.6rem;
+  width: 1.6rem;
+  right: 0.65rem;
+  height: 1.6rem;
+  margin-top: 16rem;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #5324D6;
+  background-color: rgba(0, 0, 0, 0.6901960784);
+  z-index: 2;
+}
+
+main .about-container .right-side .path-container .main-line .dot:nth-child(3) {
+  margin-top: 12rem;
+}
+
+main .about-container .right-side .path-container .main-line .dot:nth-child(4) {
+  margin-top: 14rem;
+}
+
+main .about-container .right-side .path-container .main-line .dot:nth-child(5) {
+  margin-top: 15rem;
+}
+
+main .about-container .right-side .path-container .main-line .dot:nth-child(6) {
+  margin-top: 15rem;
+}
+
+main .about-container .right-side .path-container .left-side-m {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  width: 45%;
+}
+
+main .about-container .right-side .path-container .left-side-m .left-message:first-child {
+  padding-top: 20rem;
+}
+
+main .about-container .right-side .path-container .right-side-m {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  width: 45%;
+}
+
+main .about-container .right-side .path-container .right-side-m .right-message:first-child {
+  padding-top: 1.6rem;
+}
+
+main .project-section {
+  padding: 1rem;
+  padding-top: 0;
+}
+
+main .project-section .box {
+  margin-bottom: 0.4rem;
+}
+
+main .project-section .project h2 {
+  padding-left: 2rem;
+}
+
+main .project-section .project p {
+  text-indent: 3rem;
+  font-size: 1.5rem;
+  color: #bababa;
+  text-align: justify;
+}
+
+main .project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+main .project-container .web-box {
+  width: 90%;
+  height: 100%;
+  min-height: 40rem;
+  margin-bottom: 3rem;
+  background-color: #150F37;
+  transition: transform 0.1s;
+}
+
+main .project-container .main-box {
+  width: 95%;
+  height: 100%;
+  background-color: #1A0C6A;
+}
+
+main .project-container .main-box .text-web h2 {
+  font-size: 3.5rem;
+}
+
+main .project-container .photo-web {
+  position: relative;
+  width: 100%;
+}
+
+main .project-container .photo-web img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+}
+
+main .project-container .photo-web video {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+}
+
+main .project-container .photo-web .github-icon {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  color: #040615;
+  font-size: 3rem;
+}
+
+main .project-container .text-web {
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+main .project-container .text-web h2 {
+  text-align: center;
+}
+
+main .project-container .text-web p {
+  color: #bababa;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+main .project-container .text-web .horizontal-line {
+  margin: 1rem;
+}
+
+main .project-container .text-web span {
+  font-size: 1rem;
+}
+
+main .bg-contact-3d {
+  position: absolute;
+  width: 100%;
+  height: 60rem;
+}
+
+main .contact-container {
+  position: relative;
+  height: 60rem;
+  padding: 1rem;
+}
+
+main .contact-container .contact-box {
+  padding-bottom: 4rem;
+}
+
+main .contact-container .contact-box .error-text {
+  padding: 0.3rem 0.5rem;
+  color: #c32b23;
+  font-size: 1rem;
+  visibility: hidden;
+}
+
+main .contact-container .contact-box .error .error-text {
+  visibility: visible;
+}
+
+main .contact-container .contact-box .button-space {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+main .contact-container .contact-box .line {
+  top: 4rem;
+  left: -3.4rem;
+}
+
+main .contact-container .contact-box h3 {
+  color: #999899;
+  text-transform: uppercase;
+}
+
+main .contact-container .contact-box h2 {
+  padding-bottom: 2rem;
+}
+
+main .contact-container .contact-box .input-contact {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  padding-bottom: 1rem;
+}
+
+main .contact-container .contact-box .input-contact label {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding-bottom: 0.2rem;
+}
+
+main .contact-container .contact-box .input-contact .text-input {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.7rem;
+  background-color: #1A0C6A;
+}
+
+main .contact-container .contact-box .input-contact textarea {
+  height: 14rem;
+  resize: none;
+}
+
+main .contact-container .contact-box .btn-contact {
+  position: relative;
+  left: 50%;
+  padding: 1rem 4rem;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: #1A0C6A;
+  opacity: 0.9;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+main .contact-container .contact-box .btn-contact:active {
+  opacity: 1;
+}
+
+main footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem 0;
+  color: #ffffff;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-16px);
+  }
+
+  55% {
+    transform: translateY(0px);
+  }
+
+  65% {
+    transform: translateY(-9px);
+  }
+
+  75% {
+    transform: translateY(0);
+  }
+
+  85% {
+    transform: translateY(-4px);
+  }
+
+  90% {
+    transform: translateY(0);
+  }
+
+  95% {
+    transform: translateY(-1px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 860px) {
+  .line {
+    position: absolute;
+    top: 50%;
+    left: -6rem;
+    height: 25rem;
+    width: 4px;
+    box-shadow: 0 0 3rem #40189e;
+    background-image: linear-gradient(180deg, #40189e 0%, transparent 100%);
+  }
+
+  .line::before {
+    content: "";
+    position: absolute;
+    left: -1rem;
+    top: -0.1rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+    box-shadow: 0 0 2rem #5324D6;
+    background-color: #40189e;
+    z-index: 2;
+  }
+
+  .line::after {
+    content: "";
+    position: absolute;
+    top: -5rem;
+    width: 0.3rem;
+    height: 5rem;
+    box-shadow: 0 0 2rem #5324D6;
+    background-image: linear-gradient(0, #40189e 0%, transparent 100%);
+  }
+
+  nav {
+    -webkit-backdrop-filter: blur(0.8rem);
+    backdrop-filter: blur(0.8rem);
+  }
+
+  nav .burger-nav {
+    display: none;
+  }
+
+  nav .nav-items {
+    width: 100%;
+    flex-direction: row;
+    justify-content: end;
+    top: 0;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    z-index: 1;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  nav .nav-items .active {
+    position: absolute;
+    left: 0;
+  }
+
+  nav .nav-items a {
+    padding: 0 2rem;
+    width: auto;
+    font-size: 1.9rem;
+    color: #bababa;
+    cursor: pointer;
+    transition: color 0.5s ease;
+  }
+
+  nav .nav-items a:hover {
+    color: #ffffff;
+  }
+
+  main .start {
+    background: url("../img/background-main.jpg");
+    background-size: cover;
+  }
+
+  main .start .photo-me-box {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    padding-top: 4rem;
+  }
+
+  main .start .photo-me-box .line::after {
+    width: 0;
+  }
+
+  main .start .photo-me-box header {
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+  }
+
+  main .start .photo-me-box header .tag {
+    left: -21rem;
+  }
+
+  main .start .photo-me-box header h1 {
+    font-size: 5.51rem;
+  }
+
+  main .start .photo-me-box header p {
+    align-self: center;
+    font-size: 1.8rem;
+    padding-left: 1.2rem;
+  }
+
+  main .start .photo-me-box .photo-container {
+    height: 100%;
+    width: 50%;
+    padding-top: 1rem;
+  }
+
+  main .start .photo-me-box .photo-container .my-description h2 {
+    font-size: 3rem;
+  }
+
+  main .start .photo-me-box .photo-container .my-description p {
+    font-size: 1.4rem;
+  }
+
+  main .about-container {
+    flex-direction: row;
+    padding-top: 0;
+  }
+
+  main .about-container .left-side {
+    width: 55%;
+    padding: 4rem;
+    padding-bottom: 0rem;
+  }
+
+  main .about-container .left-side .about-me-text .line {
+    top: 4rem;
+    left: -3.4rem;
+  }
+
+  main .about-container .right-side {
+    width: 45%;
+    height: 40rem;
+    padding-top: 6rem;
+  }
+
+  main .about-container .right-side .path-container .main-line {
+    height: 105rem;
+  }
+
+  main .about-container .right-side .path-container .main-line .dot:nth-child(3) {
+    margin-top: 9rem;
+  }
+
+  main .about-container .right-side .path-container .main-line .dot:nth-child(4) {
+    margin-top: 15rem;
+  }
+
+  main .about-container .right-side .path-container .main-line .dot:nth-child(5) {
+    margin-top: 13rem;
+  }
+
+  main .about-container .right-side .path-container .main-line .dot:nth-child(6) {
+    margin-top: 14rem;
+  }
+
+  main .about-container .right-side .path-container .left-side-m {
+    width: 45%;
+  }
+
+  main .about-container .right-side .path-container .right-side-m {
+    width: 45%;
+  }
+
+  main .project-section {
+    padding: 4rem;
+    padding-top: 0;
+  }
+
+  main .project-section .project {
+    width: 52%;
+  }
+
+  main .project-section .project .line {
+    top: 4rem;
+    left: -3.4rem;
+  }
+
+  main .project-container {
+    flex-direction: row;
+    gap: 3rem;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+  main .project-container .web-box {
+    height: 41rem;
+    width: 39rem;
+  }
+
+  main .project-container .main-box {
+    height: 43rem;
+  }
+
+  main .project-container .main-box .text-web h2 {
+    font-size: 4rem;
+  }
+
+  main .bg-contact-3d {
+    height: 100vh;
+  }
+
+  main .contact-container {
+    height: 100vh;
+  }
+
+  main .contact-container .contact-box {
+    width: 40%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 1200px) {
+  main .start .photo-me-box .line {
+    left: auto;
+  }
+
+  main .start .photo-me-box header h1 {
+    font-size: 7.81rem;
+  }
+
+  main .start .photo-me-box .photo-container .my-description h2 {
+    font-size: 3.4rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
