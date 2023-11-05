@@ -657,7 +657,8 @@ main {
 
     footer {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         font-size: 1.2rem;
         font-weight: bold;
         padding: 1rem 0;
@@ -993,8 +994,6 @@ main {
 
     footer {
         display: flex;
-        flex-direction: column;
-        align-items: center;
         font-size: 1.2rem;
         font-weight: bold;
         padding: 1rem 0;
