@@ -47,7 +47,6 @@ const closeNav = () => {
     nav.style.paddingTop = '0.72rem'
     nav.style.paddingLeft = '0.72rem'
 }
-
 async function apperingText() {
     let textContent = textMe.textContent
     let lengthText = textContent.length
@@ -200,6 +199,11 @@ boxesPerspective.forEach((boxPerspective) => {
         boxPerspective.style.transform = `perspective(300px) rotateY(0) rotateX(0)`;
     });
 });
+document.addEventListener('click', e => {
+    if (btnBurger.style.width === '100%' && e.target !== navElements && e.target !== btnBurger && e.target !== burgerIcon) {
+        closeNav();
+    }
+})
 btnBurger.addEventListener('click', handleNav)
 navElements.forEach(element => {
     element.addEventListener('click', closeNav)

@@ -109,6 +109,9 @@ nav {
   transition: padding 0.5s ease;
   z-index: 1234141;
 }
+nav .wrapper {
+  height: 0;
+}
 nav .blur {
   -webkit-backdrop-filter: blur(0.8rem) saturate(140%);
           backdrop-filter: blur(0.8rem) saturate(140%);
@@ -441,7 +444,7 @@ main .contact-container {
   padding: 1rem;
 }
 main .contact-container .contact-box {
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 main .contact-container .contact-box .error-text {
   padding: 0.3rem 0.5rem;
@@ -495,13 +498,18 @@ main .contact-container .contact-box .input-contact textarea {
   height: 14rem;
   resize: none;
 }
+main .contact-container .contact-box .terms p {
+  text-align: center;
+  padding: 1rem 4rem;
+  color: #999899;
+}
 main .contact-container .contact-box .btn-contact {
   position: relative;
   left: 50%;
   padding: 1rem 4rem;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
@@ -539,6 +547,26 @@ main footer {
   font-weight: bold;
   padding: 1rem 0;
   color: #ffffff;
+}
+main .policy-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main .policy-container h1 {
+  color: #ffffff;
+  font-size: 5rem;
+}
+main .policy-container h2 {
+  padding: 1rem;
+  padding-left: 0;
+}
+main .policy-container p {
+  color: #bababa;
+  font-size: 1.5rem;
+}
+main .policy-container .box {
+  margin-top: 6rem;
 }
 
 @keyframes sendBtn {
@@ -632,6 +660,9 @@ main footer {
   nav {
     -webkit-backdrop-filter: blur(0.8rem);
             backdrop-filter: blur(0.8rem);
+  }
+  nav .wrapper {
+    height: auto;
   }
   nav .burger-nav {
     display: none;

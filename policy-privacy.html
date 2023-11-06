@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Title Tag" content="Portfolio - Maciej Talarczyk">
+    <meta name="description" content="Strona opisująca mnie i moja pracę, ktrórą wykonuje.">
+    <meta name="keywords"
+        content="strona, portfolio, html, js, css, sass, react, tailwind, threejs, animacje, nowoczesny wygląd">
+    <title>Portfolio - Maciej Talarczyk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b162ab19b6.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="./img/profilpic.png">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+
+
+<body>
+
+    <nav>
+        <div class="wrapper">
+            <button class="burger-nav blur box"><i class="fa-solid fa-terminal"></i><i
+                    class="fa-solid fa-code hide"></i></button>
+            <div class="nav-items blur">
+                <a class="active" href="#"><i class="fa-solid fa-code-merge fa-bounce"></i> Maciej | Frontend
+                    Developer</a>
+                <a href="index.html#About">About</a>
+                <a href="index.html#Project">Project</a>
+                <a href="index.html#Contact">Contact</a>
+                <a href="policy-privacy-PL.html">PL</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div class="wrapper policy-container">
+                <div class="box">
+                    <h1>Privacy Policy</h1>
+
+                    <h2>1. General Information</h2>
+                    <p>1. This policy applies to the website located at the URL:
+                        https://muclx.github.io/Portfolio-Maciej-Talarczyk/</p>
+                    <p>2. The operator of the website and the Data Controller for personal data is Maciej Talarczyk.</p>
+                    <p>3. The operator's contact email address is mt.contact123@gmail.com.</p>
+                    <p>4. The operator is the Data Controller for your personal data concerning data voluntarily
+                        provided on the website.</p>
+                    <p>5. The website processes personal data for the following purposes:</p>
+                    <p style="padding-left: 2rem;">- Handling inquiries via the form.</p>
+
+                    <h2>2. Selected Data Protection Methods Used by the Operator</h2>
+                    <p>1. Places for logging in and entering personal data are protected in the transmission layer (SSL
+                        certificate). As a result, personal data and login data entered on the website are encrypted on
+                        the user's computer and can only be read on the target server.</p>
+                    <p>2. An essential element of data protection is the regular update of all software used by the
+                        operator for processing personal data, including regular updates of programming components.</p>
+
+                    <h2>3. Information in Forms</h2>
+                    <p>1. The website collects information voluntarily provided by the user, including personal data, if
+                        provided.</p>
+                    <p>2. The website may store information about connection parameters (time stamp, IP address). Data
+                        provided in the form is processed for purposes resulting from the specific function of the form,
+                        e.g., for business contact. Each time, the context and description of the form clearly inform
+                        about its purpose.</p>
+
+                    <h2>4. Administrator's Logs</h2>
+                    <p>1. Information about user behavior on the website may be subject to logging. This data is used
+                        for the administration of the website.</p>
+
+                    <h2>5. Important Marketing Techniques</h2>
+                    <p>1. The operator uses statistical analysis of website traffic, through Google Analytics (Google
+                        Inc., based in the USA). The operator does not transmit personal data to this service provider,
+                        but only anonymized information. The service is based on the use of cookies in the end-user's
+                        device. Regarding information about user preferences collected by the Google advertising
+                        network, users can view and edit the information resulting from cookies using the following
+                        tool: https://www.google.com/ads/preferences/</p>
+
+                    <h2>6. Information About Cookies</h2>
+                    <p>1. The website uses cookies.</p>
+                    <p>2. Cookies (so-called "cookies") are computer data, in particular text files, which are stored in
+                        the end-user's device and are intended for use with web pages of the website. Cookies usually
+                        contain the name of the website from which they originate, time of their storage on the
+                        end-user's device, and a unique number.</p>
+                    <p>3. The entity that places cookies on the end-user's device and gains access to them is the
+                        operator of the website.</p>
+                    <p>4. Cookies are used for the following purposes:</p>
+                    <p style="padding-left: 1rem;">- Achieving the objectives specified above in the "Important
+                        Marketing Techniques" section;</p>
+                    <p>5. Two basic types of cookies are used within the website: "session" (session cookies) and
+                        "persistent" cookies. "Session" cookies are temporary files that are stored on the end-user's
+                        device until logging out, leaving the website, or turning off the software (web browser).
+                        "Persistent" cookies are stored on the end-user's device for the time specified in the
+                        parameters of the cookies or until they are deleted by the end-user.</p>
+                    <p>6. The web browsing software (web browser) usually allows storing cookies on the end-user's
+                        device by default. Website users can change their cookie settings in this regard. The web
+                        browser allows deleting cookies. It is also possible to automatically block cookies. Detailed
+                        information on this topic is included in the help or documentation of the web browser.
+                        Limitations on the use of cookies may affect some of the functionalities available on the
+                        website.</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div>Copyright © <span class=" year"></span>
+            </div>
+            <div><a href="https://www.freepik.com/free-vector/creative-line-art-vector-illustration-eps-10-design-elements-created-using-blend-tool_34385550.htm"
+                    target="_blank">Image
+                    by flatart</a> on Freepik</div>
+        </footer>
+    </main>
+    <script>
+        const btnBurger = document.querySelector('.burger-nav')
+        const burgerIcon = document.querySelector('.fa-terminal')
+        const navItems = document.querySelector('.nav-items')
+        const navElements = document.querySelectorAll('.nav-items>a')
+        const xCode = document.querySelector('.fa-code')
+        const nav = document.querySelector('nav')
+        const currentDate = new Date();
+        const year = document.querySelector('.year')
+
+        year.textContent = ` ${currentDate.getFullYear()} Maciej Talarczyk `;
+
+        const handleNav = () => {
+
+            burgerIcon.classList.toggle('hide')
+            navItems.classList.toggle('transform')
+            xCode.classList.toggle('show')
+            xCode.classList.toggle('hide')
+            if (btnBurger.style.width === '100%') {
+                btnBurger.style.width = '6.225rem'; // Przywracamy domyślną szerokość
+                nav.style.paddingTop = '0.72rem'
+                nav.style.paddingLeft = '0.72rem'
+                btnBurger.style.borderRadius = '1.2rem'
+
+            } else {
+                btnBurger.style.width = '100%'; // Ustawiamy szerokość na 100%
+                nav.style.padding = '0'
+                btnBurger.style.borderRadius = '0'
+
+            }
+        }
+        const closeNav = () => {
+            burgerIcon.classList.toggle('hide')
+            btnBurger.style.width = '6.225rem'; // Przywracamy domyślną szerokość
+            btnBurger.style.borderRadius = '1.2rem'
+            navItems.classList.remove('transform')
+            xCode.classList.add('hide')
+            nav.style.paddingTop = '0.72rem'
+            nav.style.paddingLeft = '0.72rem'
+        }
+        btnBurger.addEventListener('click', handleNav)
+        document.addEventListener('click', e => {
+            if (btnBurger.style.width === '100%' && e.target !== navElements && e.target !== btnBurger && e.target !== burgerIcon) {
+                closeNav();
+            }
+        })
+        navElements.forEach(element => {
+            element.addEventListener('click', closeNav)
+        })
+    </script>
+</body>
+
+</html>
