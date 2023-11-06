@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b162ab19b6.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="./img/profilpic.png">
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -267,28 +268,29 @@
         <section id="Contact" class="scroll">
             <div class="bg-contact-3d"></div>
             <div class="wrapper contact-container appear-box">
-                <form action="">
+                <form action="./php/form.php" method="post">
                     <div class="box contact-box">
                         <div class="line"></div>
                         <h3>skontaktuj się</h3>
                         <h2>Kontakt</h2>
                         <div class="input-contact">
                             <label for="name">Twoje imię</label>
-                            <input class="text-input" id="name" type="text" placeholder="Jak masz na imię?">
+                            <input class="text-input" id="name" type="text" name="name" placeholder="Jak masz na imię?">
                             <p class="error-text"></p>
                         </div>
                         <div class="input-contact">
                             <label for="email">Twój email</label>
-                            <input class="text-input" id="email" type="email" placeholder="Jaki masz email?">
+                            <input class="text-input" id="email" type="email" name="email"
+                                placeholder="Jaki masz email?">
                             <p class="error-text"></p>
                         </div>
                         <div class="input-contact ">
                             <label for="message">Twoja wiadomość</label>
-                            <textarea class="text-input" id="message" type="text"
+                            <textarea class="text-input" id="message" type="text" name="msg"
                                 placeholder="Co byś chciał powiedzieć?"></textarea>
                             <p class="error-text"></p>
                         </div>
-                        <button class="btn-contact">wyślij</button>
+                        <input class="btn-contact" type="submit" value="wyślij">wyślij
                     </div>
                 </form>
             </div>

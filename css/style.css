@@ -23,6 +23,10 @@ h2 {
   animation: jump 1s alternate;
 }
 
+.animation-btn {
+  animation: sendBtn 2.4s;
+}
+
 .visible {
   animation: appear 2.5s;
 }
@@ -51,7 +55,7 @@ h2 {
 }
 
 .transform {
-  transform: translateY(32rem);
+  transform: translateY(32.9rem);
 }
 
 .hide {
@@ -507,6 +511,22 @@ main .contact-container .contact-box .btn-contact {
   opacity: 0.9;
   transform: translateX(-50%);
   cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+}
+main .contact-container .contact-box .send {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 1.5rem;
+  background-color: #1A0C6A;
+  z-index: 10;
+  transform: translateX(-14rem);
 }
 main .contact-container .contact-box .btn-contact:active {
   opacity: 1;
@@ -521,6 +541,26 @@ main footer {
   color: #ffffff;
 }
 
+@keyframes sendBtn {
+  0% {
+    transform: translateX(-14rem);
+  }
+  30% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: scale(1.3);
+  }
+  50% {
+    transform: scale(1);
+  }
+  60% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(14rem);
+  }
+}
 @keyframes appear {
   0% {
     opacity: 0;

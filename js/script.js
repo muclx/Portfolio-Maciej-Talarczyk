@@ -10,6 +10,7 @@ const tagJumpLegth = document.querySelectorAll('.tag-jump')
 const appearBox = document.querySelectorAll('.appear-box');
 const boxesPerspective = document.querySelectorAll('.perspective-box');
 const sendBtn = document.querySelector('.btn-contact')
+const sendAnimation = document.querySelector('.send')
 const email = document.querySelector('#email')
 const username = document.querySelector('#name')
 const message = document.querySelector('#message')
@@ -149,6 +150,12 @@ const checkMail = email => {
     }
 }
 
+const btnContactAnimation = () => {
+    sendAnimation.classList.add('animation-btn')
+    setTimeout(() => {
+        sendAnimation.classList.remove('animation-btn');
+    }, 2400); // 1000 milisekund = 1 sekunda
+}
 const checkErrors = () => {
     const allInputs = document.querySelectorAll('.input-contact')
     let errorCount = 0
@@ -157,6 +164,7 @@ const checkErrors = () => {
             errorCount++
     })
     if (errorCount === 0) {
+        btnContactAnimation()
         const input = [username, message, email]
         input.forEach(el => {
             el.value = ""
@@ -171,6 +179,7 @@ sendBtn.addEventListener('click', e => {
     checkLenght(message, 1)
     checkMail(email)
     checkErrors()
+
 })
 
 apperingText();
