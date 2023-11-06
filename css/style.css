@@ -430,6 +430,7 @@ main .bg-contact-3d {
   position: absolute;
   width: 100%;
   height: 60rem;
+  display: none;
 }
 main .contact-container {
   position: relative;
@@ -729,6 +730,7 @@ main footer {
     font-size: 4rem;
   }
   main .bg-contact-3d {
+    display: block;
     height: 100vh;
   }
   main .contact-container {
