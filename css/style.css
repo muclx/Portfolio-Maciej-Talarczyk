@@ -9,6 +9,20 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar-thumb {
+  background: #0e446c;
+  -webkit-box-shadow: inset 0 0 6px #0e446c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0e446c;
+  -webkit-box-shadow: inset 0 0 6px #0e446c;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #0e446c;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -203,17 +217,16 @@ main .start .photo-me-box .photo-container {
 main .start .photo-me-box .photo-container .circle-background {
   display: flex;
   justify-content: center;
-  width: 37rem;
+  width: 100%;
   height: 48rem;
 }
 main .start .photo-me-box .photo-container .circle-background .me-image {
   position: relative;
   height: 100%;
-  width: 38rem;
-  max-width: 40rem;
+  width: 50rem;
   background: url("../img/profilpic.png");
   background-size: cover;
-  transform: rotate(180deg);
+  background-position: 20%;
   z-index: 0;
 }
 main .start .photo-me-box .photo-container .my-description {
