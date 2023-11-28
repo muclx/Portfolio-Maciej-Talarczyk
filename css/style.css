@@ -489,11 +489,14 @@ main .contact-container .contact-box h3 {
 }
 main .contact-container .contact-box h2 {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   padding-bottom: 2rem;
 }
 main .contact-container .contact-box h2 a {
-  display: none;
+  padding-left: 1rem;
+  font-size: 1.4rem;
+  font-weight: normal;
+  text-decoration: none;
 }
 main .contact-container .contact-box .input-contact {
   display: flex;
@@ -826,10 +829,7 @@ main .policy-container .box {
     width: 40%;
   }
   main .contact-container .contact-box h2 a {
-    padding-left: 1rem;
-    font-weight: normal;
-    text-decoration: none;
-    display: block;
+    font-size: 1.7rem;
   }
   footer {
     display: flex;

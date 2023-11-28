@@ -612,11 +612,14 @@ main {
 
             h2 {
                 display: flex;
-                align-items: center;
+                flex-direction: column;
                 padding-bottom: 2rem;
 
                 a {
-                    display: none;
+                    padding-left: 1rem;
+                    font-size: 1.4rem;
+                    font-weight: normal;
+                    text-decoration: none;
                 }
             }
 
@@ -1097,10 +1100,7 @@ main {
 
                 h2 {
                     a {
-                        padding-left: 1rem;
-                        font-weight: normal;
-                        text-decoration: none;
-                        display: block;
+                        font-size: 1.7rem;
                     }
                 }
 
