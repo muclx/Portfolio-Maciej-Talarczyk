@@ -76,17 +76,17 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms))
 }
 
-function getRandomNumber(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-const restartAnimation = () => {
-    let randomNumber = getRandomNumber(1, tagJumpLegth.length);
-    const element = document.querySelector(`.tag-jump:nth-child(${randomNumber})`);
-    element.classList.remove('animation');
-    void element.offsetWidth;
-    element.classList.add('animation');
-}
-setInterval(restartAnimation, 10000)
+// function getRandomNumber(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+// const restartAnimation = () => {
+//     let randomNumber = getRandomNumber(1, tagJumpLegth.length);
+//     const element = document.querySelector(`.tag-jump:nth-child(${randomNumber})`);
+//     element.classList.remove('animation');
+//     void element.offsetWidth;
+//     element.classList.add('animation');
+// }
+// setInterval(restartAnimation, 10000)
 
 const appearBoxes = () => {
     const viewportHeight = window.innerHeight;
