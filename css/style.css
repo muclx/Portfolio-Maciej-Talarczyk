@@ -42,7 +42,12 @@ h2 {
 }
 
 .visible {
-  animation: appear 2.5s;
+  opacity: 1 !important;
+}
+
+.appear-box {
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
 }
 
 .tag {
@@ -483,7 +488,12 @@ main .contact-container .contact-box h3 {
   text-transform: uppercase;
 }
 main .contact-container .contact-box h2 {
+  display: flex;
+  align-items: center;
   padding-bottom: 2rem;
+}
+main .contact-container .contact-box h2 a {
+  display: none;
 }
 main .contact-container .contact-box .input-contact {
   display: flex;
@@ -600,14 +610,6 @@ main .policy-container .box {
   }
   100% {
     transform: translateX(14rem);
-  }
-}
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 @keyframes jump {
@@ -822,6 +824,12 @@ main .policy-container .box {
   }
   main .contact-container .contact-box {
     width: 40%;
+  }
+  main .contact-container .contact-box h2 a {
+    padding-left: 1rem;
+    font-weight: normal;
+    text-decoration: none;
+    display: block;
   }
   footer {
     display: flex;

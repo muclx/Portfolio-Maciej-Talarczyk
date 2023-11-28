@@ -96,7 +96,7 @@ const appearBoxes = () => {
 
         if (elementTop < viewportHeight) {
             box.classList.add('visible');
-            box.style.opacity = 1;
+            box.style.transform = "translateY(-5rem)"
 
         }
     });
@@ -135,7 +135,6 @@ const checkLenght = (input, min) => {
 const checkMail = email => {
 
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    ///wyrazenie regularne 
     if (re.test(email.value)) {
         clearError(email)
     }

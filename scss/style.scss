@@ -44,7 +44,12 @@ h2 {
 }
 
 .visible {
-    animation: appear 2.5s;
+    opacity: 1 !important;
+}
+
+.appear-box {
+    opacity: 0;
+    transition: opacity .5s, transform .5s;
 }
 
 .tag {
@@ -606,7 +611,13 @@ main {
             }
 
             h2 {
+                display: flex;
+                align-items: center;
                 padding-bottom: 2rem;
+
+                a {
+                    display: none;
+                }
             }
 
             .input-contact {
@@ -772,17 +783,6 @@ main {
     }
 }
 
-@keyframes appear {
-    0% {
-        opacity: 0;
-        // transform: translateY(0);
-    }
-
-    100% {
-        opacity: 1;
-        // transform: translateY(50px);
-    }
-}
 
 @keyframes jump {
 
@@ -1094,6 +1094,15 @@ main {
 
             .contact-box {
                 width: 40%;
+
+                h2 {
+                    a {
+                        padding-left: 1rem;
+                        font-weight: normal;
+                        text-decoration: none;
+                        display: block;
+                    }
+                }
 
             }
         }
